@@ -1,0 +1,35 @@
+pedromorgan,
+
+I've moved my development tree to Github (http://github.com/nick125/ArduinoIDE-PyQt), 
+as SVN decided that it didn't like me and I didn't like it. So, my latest changes are 
+there. I migrated the repo, so all of the history in SVN is there. Your account should 
+have commit access to that repo, so feel free. We can still use Google Code for issue 
+tracking and wiki, or I can move my commits to SVN. I'd prefer to stay on Github,
+though. 
+
+I've done a bit of moving around. Stuff that's related to the dock is in gui/dockwidgets,
+stuff that's a pane is in gui/panes, and so on. 
+
+I also added some things to the browser so we can call Python functions from Javascript in 
+the browser. That code is in gui.Browser.BrowserActions. This should allow us to make a 
+really fancy welcome.html. I want to revamp the gui.Browser.BrowserWidget code to use normal
+file:// rather than piping the HTML in. If we need to, we can add an functions as 
+Javascript later for scripting within the browser. It's a better idea than doing
+replaces. 
+
+gui.QuickStart is where I want to put the new QuickStart wizard, with the Arduino tools 
+downloader, etc. 
+
+I did a large number of code cleanups. When I started, we had a -9.8/10 in PyLint, and 
+now we have a 7.2/10, which means that the code quality has improved significantly. 
+I'm planning on going through the code more in-depth and documenting it with docstrings. 
+So much fun.
+
+I hope you aren't too upset by any of the changes. Tomorrow, I'm hoping to start some 
+real development after I get the rest of the code base documented and cleaned up.
+
+Cheers,
+Nick
+
+
+
